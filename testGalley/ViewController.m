@@ -12,8 +12,8 @@
 
 @interface ViewController ()
 {
-    NSMutableArray *images;
-    __weak IBOutlet TVDViewGallery *table;
+    NSMutableArray *links;
+    __weak IBOutlet TVDGallery *table;
 }
 
 @end
@@ -22,134 +22,79 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    images = [NSMutableArray new];
+    links = [NSMutableArray new];
     // Do any additional setup after loading the view, typically from a nib.
-    [images addObject:@"http://vietnamtourism.gov.vn/english/images/109du-lich-Ha-long.jpg"];
-    [images addObject:@"https://vietnamchange.files.wordpress.com/2014/05/image-884.jpg?w=321"];
-    [images addObject:@"https://upload.wikimedia.org/wikipedia/commons/1/18/India_Vietnam_Locator.png"];
-    [images addObject:@"http://data.sinhvienit.net/2013/T01/img/SinhVienIT.Net---anh-bia-toi-yeu-viet-nam-co-do-sao-vang-10.jpg"];
-    [images addObject:@"https://farm8.staticflickr.com/7424/13950918227_443786981f_o.jpg"];
-    [images addObject:@"https://i.ytimg.com/vi/Vs19oNPQQYQ/hqdefault.jpg"];
-    [images addObject:@"http://vietnamtourism.gov.vn/english/images/109du-lich-Ha-long.jpg"];
-    [images addObject:@"https://vietnamchange.files.wordpress.com/2014/05/image-884.jpg?w=321"];
-    [images addObject:@"https://upload.wikimedia.org/wikipedia/commons/1/18/India_Vietnam_Locator.png"];
-    [images addObject:@"http://data.sinhvienit.net/2013/T01/img/SinhVienIT.Net---anh-bia-toi-yeu-viet-nam-co-do-sao-vang-10.jpg"];
-    [images addObject:@"https://farm8.staticflickr.com/7424/13950918227_443786981f_o.jpg"];
-    [images addObject:@"https://i.ytimg.com/vi/Vs19oNPQQYQ/hqdefault.jpg"];
-    [images addObject:@"http://vietnamtourism.gov.vn/english/images/109du-lich-Ha-long.jpg"];
-    [images addObject:@"https://vietnamchange.files.wordpress.com/2014/05/image-884.jpg?w=321"];
-    [images addObject:@"https://upload.wikimedia.org/wikipedia/commons/1/18/India_Vietnam_Locator.png"];
-    [images addObject:@"http://data.sinhvienit.net/2013/T01/img/SinhVienIT.Net---anh-bia-toi-yeu-viet-nam-co-do-sao-vang-10.jpg"];
-    [images addObject:@"https://farm8.staticflickr.com/7424/13950918227_443786981f_o.jpg"];
-    [images addObject:@"https://i.ytimg.com/vi/Vs19oNPQQYQ/hqdefault.jpg"];
-    [images addObject:@"http://vietnamtourism.gov.vn/english/images/109du-lich-Ha-long.jpg"];
-    [images addObject:@"https://vietnamchange.files.wordpress.com/2014/05/image-884.jpg?w=321"];
-    [images addObject:@"https://upload.wikimedia.org/wikipedia/commons/1/18/India_Vietnam_Locator.png"];
-    [images addObject:@"http://data.sinhvienit.net/2013/T01/img/SinhVienIT.Net---anh-bia-toi-yeu-viet-nam-co-do-sao-vang-10.jpg"];
-    [images addObject:@"https://farm8.staticflickr.com/7424/13950918227_443786981f_o.jpg"];
-    [images addObject:@"https://i.ytimg.com/vi/Vs19oNPQQYQ/hqdefault.jpg"];
-    [images addObject:@"http://vietnamtourism.gov.vn/english/images/109du-lich-Ha-long.jpg"];
-    [images addObject:@"https://vietnamchange.files.wordpress.com/2014/05/image-884.jpg?w=321"];
-    [images addObject:@"https://upload.wikimedia.org/wikipedia/commons/1/18/India_Vietnam_Locator.png"];
-    [images addObject:@"http://data.sinhvienit.net/2013/T01/img/SinhVienIT.Net---anh-bia-toi-yeu-viet-nam-co-do-sao-vang-10.jpg"];
-    [images addObject:@"https://farm8.staticflickr.com/7424/13950918227_443786981f_o.jpg"];
-    [images addObject:@"https://i.ytimg.com/vi/Vs19oNPQQYQ/hqdefault.jpg"];
-    [images addObject:@"https://upload.wikimedia.org/wikipedia/commons/1/18/India_Vietnam_Locator.png"];
-    [images addObject:@"http://data.sinhvienit.net/2013/T01/img/SinhVienIT.Net---anh-bia-toi-yeu-viet-nam-co-do-sao-vang-10.jpg"];
-    [images addObject:@"https://farm8.staticflickr.com/7424/13950918227_443786981f_o.jpg"];
-    [images addObject:@"https://i.ytimg.com/vi/Vs19oNPQQYQ/hqdefault.jpg"];
-    [images addObject:@"http://vietnamtourism.gov.vn/english/images/109du-lich-Ha-long.jpg"];
-    [images addObject:@"https://vietnamchange.files.wordpress.com/2014/05/image-884.jpg?w=321"];
+//    [links addObject:@"http://7-themes.com/data_images/out/60/6976900-earth-landscape-art.jpg"];
+    [links addObject:@"http://st.hzcdn.com/fimgs/d3e1af24028a9037_1205-w500-h666-b0-p0--contemporary-landscape.jpg"];
+    [links addObject:@"https://upload.wikimedia.org/wikipedia/commons/1/18/India_Vietnam_Locator.png"];
+    [links addObject:@"http://data.sinhvienit.net/2013/T01/img/SinhVienIT.Net---anh-bia-toi-yeu-viet-nam-co-do-sao-vang-10.jpg"];
+    [links addObject:@"https://farm8.staticflickr.com/7424/13950918227_443786981f_o.jpg"];
+    [links addObject:@"https://i.ytimg.com/vi/Vs19oNPQQYQ/hqdefault.jpg"];
+    [links addObject:@"http://vietnamtourism.gov.vn/english/images/109du-lich-Ha-long.jpg"];
+//    [links addObject:@"http://wallarthd.com/wp-content/uploads/2014/12/Landscape-Painting-Wallpaper-HD.jpg"];
+//    [links addObject:@"http://7-themes.com/data_images/out/71/7013402-hills-landscape.jpg"];
+    [links addObject:@"http://www.wallpaperhdf.com/wp-content/uploads/2016/02/landscape-wallpaper-widescreen.jpg"];
+    [links addObject:@"http://largelandscapes.org/static/images/TBynumHomepage.jpg"];
+    [links addObject:@"http://images.all-free-download.com/images/graphicthumb/summer_landscape_312434.jpg"];
+    [links addObject:@"https://s-media-cache-ak0.pinimg.com/236x/e7/db/e7/e7dbe72acc1942c3275b1af7c30070d9.jpg"];
+//    [links addObject:@"http://blog.spoongraphics.co.uk/wp-content/uploads/2015/vector-landscape/vector-landscape.jpg"];
+//    [links addObject:@"http://digital-photography-school.com/wp-content/uploads/flickr/4164002933_e787dae9af_o.jpg"];
+//    [links addObject:@"http://static.boredpanda.com/blog/wp-content/uuuploads/landscape-photography/landscape-photography-12.jpg"];
+//    [links addObject:@"http://st.hzcdn.com/fimgs/9351dd1300226ca7_1944-w500-h666-b0-p0--traditional-landscape.jpg"];
+    
+    [table reloadData];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
--(CGFloat)spaceForViewGallery:(TVDViewGallery*)viewTvd{
+-(CGFloat)spaceForViewGallery:(TVDGallery*)viewTvd{
     return 8;
 }
--(CGFloat)heghtForRowViewGallery:(TVDViewGallery*)viewTvd{
-    return 200;
+
+-(NSInteger)numberOfViewOnViewGallery:(TVDGallery*)viewTvd{
+    return links.count;
 }
--(NSInteger)numberOfViewOnViewGallery:(TVDViewGallery*)viewTvd{
-    return images.count;
+
+-(NSInteger)numberOfColumnOnViewGallery:(TVDGallery*)viewTvd{
+    return 2;
 }
--(NSInteger)numberOfMaxColumnOnViewGallery:(TVDViewGallery*)viewTvd{
-    return 3;
-}
--(UIView*)viewGallery:(TVDViewGallery*)viewTvd atIndex:(NSInteger)index reUsingView:(UIView*)view{
+
+-(UIView*)viewGallery:(TVDGallery*)viewTvd atIndex:(NSInteger)index reUsingView:(UIView*)view{
+    NSLog(@"1111111111111");
     ViewThoiTiet *img;
     if(!view){
         img = [[ViewThoiTiet alloc] init];
+        NSLog(@"00000000000");
     }else{
         img = (ViewThoiTiet*)view;
     }
-    [img.img setImageWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[images objectAtIndex:index]]] placeholderImage:nil success:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, UIImage * _Nonnull image) {
+    [img.img setImageWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[links objectAtIndex:index]]] placeholderImage:nil success:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, UIImage * _Nonnull image) {
         img.img.image = image;
         [table setSize:image.size forIndex:index];
     } failure:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, NSError * _Nonnull error) {
         
     }];
-    if(index==images.count-1 && images.count<200){
-        
-        [images addObject:@"https://farm8.staticflickr.com/7424/13950918227_443786981f_o.jpg"];
-        [images addObject:@"https://i.ytimg.com/vi/Vs19oNPQQYQ/hqdefault.jpg"];
-        [images addObject:@"http://vietnamtourism.gov.vn/english/images/109du-lich-Ha-long.jpg"];
-        [images addObject:@"https://vietnamchange.files.wordpress.com/2014/05/image-884.jpg?w=321"];
-        [images addObject:@"https://upload.wikimedia.org/wikipedia/commons/1/18/India_Vietnam_Locator.png"];
-        [images addObject:@"http://data.sinhvienit.net/2013/T01/img/SinhVienIT.Net---anh-bia-toi-yeu-viet-nam-co-do-sao-vang-10.jpg"];
-        [images addObject:@"https://farm8.staticflickr.com/7424/13950918227_443786981f_o.jpg"];
-        [images addObject:@"https://i.ytimg.com/vi/Vs19oNPQQYQ/hqdefault.jpg"];
-        [images addObject:@"http://vietnamtourism.gov.vn/english/images/109du-lich-Ha-long.jpg"];
-        [images addObject:@"https://vietnamchange.files.wordpress.com/2014/05/image-884.jpg?w=321"];
-        [images addObject:@"https://upload.wikimedia.org/wikipedia/commons/1/18/India_Vietnam_Locator.png"];
-        [images addObject:@"http://data.sinhvienit.net/2013/T01/img/SinhVienIT.Net---anh-bia-toi-yeu-viet-nam-co-do-sao-vang-10.jpg"];
-        [images addObject:@"https://farm8.staticflickr.com/7424/13950918227_443786981f_o.jpg"];
-        [images addObject:@"https://i.ytimg.com/vi/Vs19oNPQQYQ/hqdefault.jpg"];
-        [images addObject:@"http://vietnamtourism.gov.vn/english/images/109du-lich-Ha-long.jpg"];
-        [images addObject:@"https://vietnamchange.files.wordpress.com/2014/05/image-884.jpg?w=321"];
-        [images addObject:@"https://upload.wikimedia.org/wikipedia/commons/1/18/India_Vietnam_Locator.png"];
-        [images addObject:@"http://data.sinhvienit.net/2013/T01/img/SinhVienIT.Net---anh-bia-toi-yeu-viet-nam-co-do-sao-vang-10.jpg"];
-        [images addObject:@"https://farm8.staticflickr.com/7424/13950918227_443786981f_o.jpg"];
-        [images addObject:@"https://i.ytimg.com/vi/Vs19oNPQQYQ/hqdefault.jpg"];
-        [images addObject:@"http://vietnamtourism.gov.vn/english/images/109du-lich-Ha-long.jpg"];
-        [images addObject:@"https://vietnamchange.files.wordpress.com/2014/05/image-884.jpg?w=321"];
-        [images addObject:@"https://upload.wikimedia.org/wikipedia/commons/1/18/India_Vietnam_Locator.png"];
-        [images addObject:@"http://data.sinhvienit.net/2013/T01/img/SinhVienIT.Net---anh-bia-toi-yeu-viet-nam-co-do-sao-vang-10.jpg"];
-        [images addObject:@"https://farm8.staticflickr.com/7424/13950918227_443786981f_o.jpg"];
-        [images addObject:@"https://i.ytimg.com/vi/Vs19oNPQQYQ/hqdefault.jpg"];
-        [images addObject:@"https://upload.wikimedia.org/wikipedia/commons/1/18/India_Vietnam_Locator.png"];
-        [images addObject:@"http://data.sinhvienit.net/2013/T01/img/SinhVienIT.Net---anh-bia-toi-yeu-viet-nam-co-do-sao-vang-10.jpg"];
-        [images addObject:@"https://farm8.staticflickr.com/7424/13950918227_443786981f_o.jpg"];
-        [images addObject:@"https://i.ytimg.com/vi/Vs19oNPQQYQ/hqdefault.jpg"];
+    if(index==links.count-1 && links.count<2000){
+        [links addObject:@"http://st.hzcdn.com/fimgs/d3e1af24028a9037_1205-w500-h666-b0-p0--contemporary-landscape.jpg"];
+        [links addObject:@"https://upload.wikimedia.org/wikipedia/commons/1/18/India_Vietnam_Locator.png"];
+        [links addObject:@"http://data.sinhvienit.net/2013/T01/img/SinhVienIT.Net---anh-bia-toi-yeu-viet-nam-co-do-sao-vang-10.jpg"];
+        [links addObject:@"https://farm8.staticflickr.com/7424/13950918227_443786981f_o.jpg"];
+        [links addObject:@"https://i.ytimg.com/vi/Vs19oNPQQYQ/hqdefault.jpg"];
+        [links addObject:@"http://vietnamtourism.gov.vn/english/images/109du-lich-Ha-long.jpg"];
+        [links addObject:@"http://www.wallpaperhdf.com/wp-content/uploads/2016/02/landscape-wallpaper-widescreen.jpg"];
+        [links addObject:@"http://largelandscapes.org/static/images/TBynumHomepage.jpg"];
+        [links addObject:@"http://images.all-free-download.com/images/graphicthumb/summer_landscape_312434.jpg"];
+        [links addObject:@"https://s-media-cache-ak0.pinimg.com/236x/e7/db/e7/e7dbe72acc1942c3275b1af7c30070d9.jpg"];
         [table reloadData];
     }
     return img;
 }
 
--(void)viewGallery:(TVDViewGallery*)viewTvd selectedAtIndex:(NSInteger)index{
-    NSLog(@"%d",index);
-}
-
--(void)viewGallery:(TVDViewGallery*)viewTvd sizeDidchangedOnView:(UIView*)view{
-    if(view==nil)return;
-    if(![view isKindOfClass:[ViewThoiTiet class]])return;
-    ViewThoiTiet *v = (ViewThoiTiet*)view;
-    if(v.frame.size.width<=0)return;
-    if(v.frame.size.height<=0)return;
-    float tlw = v.img.image.size.width/v.frame.size.width;
-    float tlh = v.img.image.size.height/v.frame.size.height;
-    if(tlw<=0)return;
-    if(tlh<=0)return;
-    float w = v.img.image.size.width/(tlw>tlh?tlh:tlw);
-    float h = v.img.image.size.height/(tlw>tlh?tlh:tlw);
-    if(w<=0)return;
-    if(h<=0)return;
-    v.img.frame = CGRectMake(0, 0, w, h);
-    v.img.center = CGPointMake(v.frame.size.width/2, v.frame.size.height/2);
+-(void)viewGallery:(TVDGallery*)viewTvd selectedView:(UIView*)v atPoint:(CGPoint)point andIndex:(NSInteger)index{
+    if(point.x>v.frame.size.width-35 && point.y<35){
+        NSLog(@"delete at index: %d",index);
+    }else{
+        NSLog(@"select at index: %d",index);
+    }
 }
 
 @end

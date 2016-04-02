@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TVDViewGallery.h"
+#import "TVDGallery.h"
 
-@interface ViewController : UIViewController<TVDViewGalleryDatasource,TVDViewGalleryDelegate>
+@interface ViewController : UIViewController<TVDGalleryDelegate, TVDGalleryDatasource>
 
 
 @end

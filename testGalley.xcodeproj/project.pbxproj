@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F1127791CA9286500DEEBC3 /* TVDGallery.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1127781CA9286500DEEBC3 /* TVDGallery.m */; };
+		9FA006591CAF855E00199663 /* btn_del.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FA006581CAF855E00199663 /* btn_del.png */; };
 		9FC8837A1C9C4E860087C7F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC883791C9C4E860087C7F6 /* main.m */; };
 		9FC8837D1C9C4E860087C7F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8837C1C9C4E860087C7F6 /* AppDelegate.m */; };
 		9FC883801C9C4E860087C7F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8837F1C9C4E860087C7F6 /* ViewController.m */; };
 		9FC883831C9C4E860087C7F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FC883811C9C4E860087C7F6 /* Main.storyboard */; };
 		9FC883851C9C4E860087C7F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FC883841C9C4E860087C7F6 /* Assets.xcassets */; };
 		9FC883881C9C4E870087C7F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FC883861C9C4E870087C7F6 /* LaunchScreen.storyboard */; };
-		9FC883911C9C4EC10087C7F6 /* TVDViewGallery.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC883901C9C4EC10087C7F6 /* TVDViewGallery.m */; };
 		9FC883B71C9C4F9F0087C7F6 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC883941C9C4F9F0087C7F6 /* AFAutoPurgingImageCache.m */; };
 		9FC883B81C9C4F9F0087C7F6 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC883961C9C4F9F0087C7F6 /* AFHTTPSessionManager.m */; };
 		9FC883B91C9C4F9F0087C7F6 /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC883981C9C4F9F0087C7F6 /* AFImageDownloader.m */; };
@@ -34,6 +35,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F1127771CA9286400DEEBC3 /* TVDGallery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVDGallery.h; sourceTree = "<group>"; };
+		9F1127781CA9286500DEEBC3 /* TVDGallery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVDGallery.m; sourceTree = "<group>"; };
+		9FA006581CAF855E00199663 /* btn_del.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_del.png; sourceTree = "<group>"; };
 		9FC883751C9C4E860087C7F6 /* testGalley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testGalley.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC883791C9C4E860087C7F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9FC8837B1C9C4E860087C7F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -44,8 +48,6 @@
 		9FC883841C9C4E860087C7F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FC883871C9C4E870087C7F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FC883891C9C4E870087C7F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9FC8838F1C9C4EC10087C7F6 /* TVDViewGallery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVDViewGallery.h; sourceTree = "<group>"; };
-		9FC883901C9C4EC10087C7F6 /* TVDViewGallery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVDViewGallery.m; sourceTree = "<group>"; };
 		9FC883931C9C4F9F0087C7F6 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAutoPurgingImageCache.h; sourceTree = "<group>"; };
 		9FC883941C9C4F9F0087C7F6 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAutoPurgingImageCache.m; sourceTree = "<group>"; };
 		9FC883951C9C4F9F0087C7F6 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
@@ -119,11 +121,12 @@
 				9FC8837C1C9C4E860087C7F6 /* AppDelegate.m */,
 				9FC8837E1C9C4E860087C7F6 /* ViewController.h */,
 				9FC8837F1C9C4E860087C7F6 /* ViewController.m */,
-				9FC8838F1C9C4EC10087C7F6 /* TVDViewGallery.h */,
-				9FC883901C9C4EC10087C7F6 /* TVDViewGallery.m */,
+				9F1127771CA9286400DEEBC3 /* TVDGallery.h */,
+				9F1127781CA9286500DEEBC3 /* TVDGallery.m */,
 				9FC883C71C9C61340087C7F6 /* ViewThoiTiet.h */,
 				9FC883C81C9C61340087C7F6 /* ViewThoiTiet.m */,
 				9FC883C91C9C61340087C7F6 /* ViewThoiTiet.xib */,
+				9FA006581CAF855E00199663 /* btn_del.png */,
 				9FC883811C9C4E860087C7F6 /* Main.storyboard */,
 				9FC883841C9C4E860087C7F6 /* Assets.xcassets */,
 				9FC883861C9C4E870087C7F6 /* LaunchScreen.storyboard */,
@@ -247,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FC883881C9C4E870087C7F6 /* LaunchScreen.storyboard in Resources */,
+				9FA006591CAF855E00199663 /* btn_del.png in Resources */,
 				9FC883851C9C4E860087C7F6 /* Assets.xcassets in Resources */,
 				9FC883CB1C9C61340087C7F6 /* ViewThoiTiet.xib in Resources */,
 				9FC883831C9C4E860087C7F6 /* Main.storyboard in Resources */,
@@ -262,10 +266,10 @@
 			files = (
 				9FC883B71C9C4F9F0087C7F6 /* AFAutoPurgingImageCache.m in Sources */,
 				9FC883BB1C9C4F9F0087C7F6 /* AFNetworkReachabilityManager.m in Sources */,
-				9FC883911C9C4EC10087C7F6 /* TVDViewGallery.m in Sources */,
 				9FC883801C9C4E860087C7F6 /* ViewController.m in Sources */,
 				9FC883B81C9C4F9F0087C7F6 /* AFHTTPSessionManager.m in Sources */,
 				9FC883BA1C9C4F9F0087C7F6 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				9F1127791CA9286500DEEBC3 /* TVDGallery.m in Sources */,
 				9FC883C01C9C4F9F0087C7F6 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				9FC883BC1C9C4F9F0087C7F6 /* AFSecurityPolicy.m in Sources */,
 				9FC883C31C9C4F9F0087C7F6 /* UIProgressView+AFNetworking.m in Sources */,
@@ -428,6 +432,7 @@
 				9FC8838E1C9C4E870087C7F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
